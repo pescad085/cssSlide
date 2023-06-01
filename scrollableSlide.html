@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <style>
+        html {
+            scroll-snap-type: y mandatory;
+            animation: pulse 2000ms  infinite alternate;
+        }
+        #myList section {
+            block-size: 100vh;
+            scroll-snap-align: center;
+           scroll-snap-stop: always;
+            display: grid;
+            place-items: center;
+            background-color: rgba(230, 230, 230, 0.663);
+        
+        }
+        @keyframes pulse {
+            from {background-color: #ff0a0a;}
+            to {background-color: #202221;}
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div id="myList">
+    <section>
+        <img src="https://www.picsum.photos/id/200/300/300">
+        <h1>title 1</h1>
+        <hr>
+        
+    </section>
+    <section>
+        <img src="https://www.picsum.photos/id/330/300/300">
+        <h1>title 2</h1>
+    </section>
+    <section>
+        <img src="https://www.picsum.photos/id/430/300/300">
+        <h1>title 3</h1>
+    </section>
+    <section>
+        <img src="https://www.picsum.photos/id/530/300/300">
+        <h1>title 4</h1>
+    </section>
+    <section>
+        <img src="https://www.picsum.photos/id/430/300/300">
+        <h1>title 5</h1>
+    </section>
+    <section>
+        <img src="https://www.picsum.photos/id/730/300/300">
+        <h1>title 6</h1>
+    </section>
+    <section>
+        <img src="https://www.picsum.photos/id/30/300/300">
+        <h1>title 7</h1>
+    </section>
+    <section>
+        <img src="https://www.picsum.photos/id/320/300/300">
+        <h1>title 8</h1>
+    </section>
+    <section>
+        <img src="https://www.picsum.photos/id/310/300/300">
+        <h1>title 9</h1>
+    </section>
+    <section>
+        <img src="https://www.picsum.photos/id/130/300/300">
+        <h1>title 10   <a href="#top">back to top</a></h1>
+    </section>
+ 
+</div>
+</body>
+</html>
